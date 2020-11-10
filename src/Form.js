@@ -43,9 +43,9 @@ export default function Form(props) {
         <label>Role
           <select name="role" value={values.role} onChange={onChange}>
             <option value="">-</option>
-            <option value="backendEngineer">Backend Engineer</option>
-            <option value="frontendEngineer">Frontend Engineer</option>
-            <option value="designer">Designer</option>
+            <option value="Backend Engineer">Backend Engineer</option>
+            <option value="Frontend Engineer">Frontend Engineer</option>
+            <option value="Designer">Designer</option>
           </select>
         </label>
 

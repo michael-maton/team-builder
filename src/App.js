@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "./Form";
 import "./App.css";
 import Member from "./Member";
+import { v4 as uuidv4 } from 'uuid';
 
 
 const initialFormValues = {
@@ -12,10 +13,9 @@ const initialFormValues = {
 
 const initialMembersList = [
   {
-    id: "0", // uuid is a lib to generate random, unique ids
-    memberName: 'Michael',
-    email: 'michael@michael.com',
-    role: 'Student',
+    memberName: 'Thanos',
+    email: 'super@villian.com',
+    role: 'Super Villian',
   }
 ];
 
@@ -52,7 +52,7 @@ function App() {
       <Form values={formValues} update={updateForm} submit={submitForm} />
 
       {members.map((member) => {
-        return <Member key={member.id} details={member} />;
+        return <Member key={uuidv4()} details={member} />;
       })}
       {/* {members.map((member) => {
         return(
