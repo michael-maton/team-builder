@@ -46,6 +46,9 @@ function App() {
   
   console.log(members);
   return (
+    <div className="wrapper">
+
+    
     <div className="container">
       <h1>Member Form</h1>
 
@@ -63,7 +66,7 @@ function App() {
           </div>
       ) 
       })} */}
-    </div>
+    </div></div>
   );
 }
 
